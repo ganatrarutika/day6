@@ -1,0 +1,20 @@
+function categorizeAge(age) {
+    switch (true) { 
+        case (age >= 0 && age <= 12):
+            console.log("Child");
+            break;
+        case (age >= 13 && age <= 19):
+            console.log("Teen");
+            break;
+        case (age >= 20 && age <= 59):
+            console.log("Adult");
+            break;
+        case (age >= 60):
+            console.log("Senior");
+            break;
+        default:
+            console.log("Invalid age. Please enter a non-negative number.");
+    }
+}
+
+categorizeAge(25); 
